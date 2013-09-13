@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>MyNotes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    
+	<style type="text/css">
+	.block1 { 
+		background: #bd6262;
+	}
+	.block2 { 
+		background: red;
+	}
+	.block3 { 
+		background: #1cc758;
+	}
+	.block4 { 
+		background: #c71cad;
+	}
+	.block5 { 
+		background: #BBD8E9;
+	}
+	.block6 { 
+		background: #DCEAF4;
+	}
+	.block7 { 
+		background: #e9f423;
+	}
+	.block88 {
+		-webkit-border-radius:2px;
+		-moz-border-radius:2px;
+		border-radius:2px;
+		margin: 1px;
+		padding-bottom: 0px;
+    	padding-top: 0px;
+    	padding-left: 2px;
+    	padding-right: 2px;
+	}
+	.center {
+		text-align: center;
+	}
+	.st1 {
+		margin: 5%; 
+	}
+	.st2 {
+		width: 98%; 
+	}
+	.st3 {
+		height: 340px;
+		overflow: scroll; 
+	}
+	.st4 {
+		color: black; 
+		font-weight: normal;
+	}
+	#edit_block {
+		position: relative;
+	    top: 40px; 
+	    right: -90%; 
+    }    
+	</style>
+    
+</head>
+<body class="block6">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+<div class="container-fluid">	
+	<div class="row-fluid block1">
+		<div class="span12 block2">
+			<h2>MyNotes v1</h2>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span3">
+			<!-- menu -->
+			<br>
+			<!--<div class="container-fluid">-->
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab1" data-toggle="tab">Заметки</a></li>
+					<li><a href="#tab2" data-toggle="tab">Теги</a></li>
+				</ul>
+				<div class="tab-content ">
+					<div class="tab-pane active" id="tab1">
+						<!-- menu-notes -->
+						<form class="form-search">
+							<div class="input-append">
+								<input type="text" class="span7 search-query">
+								<button type="submit" class="btn">Поиск</button>
+							</div>
+						</form>
+						<div class="st3"> <!-- заметки -->
+							<div class="st1">
+								<a href="">Заметка №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Заметка №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Заметка №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Заметка №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Заметка №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Заметка №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Заметка №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Заметка №1</a>
+							</div>
+							<div > <!-- разделитель -->
+								<hr>
+							</div>
+							<div class="st1">
+								<a href="">Новая заметка</a>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab2">
+						<form class="form-search">
+							<div class="input-append">
+								<input type="text" class="span7 search-query">
+								<button type="submit" class="btn">Поиск</button>
+							</div>
+						</form>
+						<div class="st3">
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+							<div class="st1">
+								<a href="">Тег №1</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!--</div>-->
+			<br>
+		</div>
+		<div class="span9 block6">
+			<!-- body -->
+			<div class="container-fluid">
+				<!-- add_note -->
+				<br>
+				<form>
+					<input type="text" placeholder="Title">
+					<br>
+					<textarea class="st2" rows="15"></textarea>
+					<br>
+					<button type="submit" class="btn btn-primary">Сохранить</button>
+					<button type="button" class="btn">Отмена</button>
+				</form>
+				
+				<!-- show_note 
+				<div id="edit_block">
+					(<a href="">edit</a> | <a href="">delete</a>)
+				</div>
+				<h3>Массачусетский технологический институт</h3>
+				<b>Дата создания:</b> July 16, 2013, 12:53 p.m. <br>
+				<b>Дата последнего редактирования:</b> July 16, 2013, 12:54 p.m. <br>
+				<br>
+				MIT is an independent university located in Boston area. It was founded in 1861 by William Barton Rogers, a distinguished natural scientist, who believed professional competence to be best fostered (воспитывать) by the combining of teaching, research, and the ap­plication of knowledge to real-world problems. MIT held its first classes in 1865 after having delayed opening because of the Civil War. There were approximately 15 students enroled at that time.
+
+				Today <span class="block88 block5"><a href="/mynotes_v1/t66" class="st4">MIT</a></span> has about 9,700 students, a faculty (профессор­ско-преподавательский состав) of approximately 1,000 and sev­eral thousand research staff. The total teaching staff numbers more that 1,800. The institute is broadly organized into five academic Schools — Architecture and Planning, Engineering, Humanities and Social Science, Management and Science — and a large num­ber of interdisciplinary programs, laboratories, and centers, includ­ing the Whitaker College of Health Science, Technology and Management. A unique feature of MIT is that undergraduates join with graduate students, faculty, and staff to work on research pro­jects throughout the institute.
+
+				Most academic activities take place <span class="block88 block5"><a href="/mynotes_v1/t47" class="st4">in</a></span> a group of intercon­nected buildings designed to permit easy communication among the Schools and their 22 departments. Across the street from this set of buildings there are athletic fields, the student center, and many of the dormitories.
+
+				The main purpose of the academic program at MIT is to give students a sound command (прочное усвоение) of basic principles, the habit of continued learning and the confidence that comes from a thorough and systematic approach to learning. This results in continued professional and personal growth, especially in today&#39;s rapidly changing world.
+
+				The two essential parts of all MIT educational programs are teaching and research. Both of these activities carried on together have greater potential than either performed alone. They provide experience in theory and experiment for both students and teaching staff.
+
+				Each student pursues a degree (стремиться получить степень) in one of the departments.. Undergraduate courses at MIT lead to the degree of <a href="/mynotes_v1/t67">Bachelor of Science</a> (S.B.). The academic programs require four years of full-time study for the Bachelor of Science. De­grees are awarded on the basis of satisfactory completion of general institute and departmental requirements (общеинститутские и ка­федральные требования) in each program.
+
+				There is enough flexibility (гибкость), however, to allow each student, in collaboration with the adviser, to develop an individual program in accordance with his or her own interests and preparation.
+				-->
+				<!-- show_tag
+				<h3>MIT</h3>
+				<a href="">Массачусетский технологический институт</a><br>
+				<a href="">Новая надежда для энергии</a><br>
+				<a href="">New Hope for Energy</a><br>
+				<a href="">Сверхпроводимость</a><br>
+				-->
+			</div>
+		</div>
+	</div>
+	<!--<div class="navbar-fixed-bottom row-fluid ">
+		<div class="navbar-inner block2">
+			<div class="container">
+				test
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid block4">
+		<div class="span12 block2">
+			footer	
+		</div>
+	</div>-->
+</div>
+	
+</body>
+</html>
